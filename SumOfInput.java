@@ -19,7 +19,17 @@ public class SumOfInput
     }
     
     public Integer oneToNumber(Integer numberToSum){
-
+        sum = 0;
+        for (int i = 1; i <= numberToSum; i++) {
+           sum = sum + i;
+           System.out.println(sum + " " + i);
+           if (sum <= 99999999) {
+               continue;
+           }
+           else {
+                return sum;
+           }
+        }
         return sum;
     }
 
